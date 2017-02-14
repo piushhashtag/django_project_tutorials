@@ -1,0 +1,107 @@
+{% extends 'base1.html' %}
+{% block bodys %}
+{#<head>#}
+{#<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">#}
+{#  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>#}
+{#  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>#}
+{##}
+{#    <title>Disco light using led</title>#}
+{##}
+{#</head>#}
+
+<div style="background-color: #CCCCCC">
+    <div class="container">
+
+                <div class="row">
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Disco light using led(FUN PROJECT)|<small> 100% Tested</small></h1><br>
+
+                </div>
+                    <br>
+{% block body_2 %}
+{% endblock %}
+
+
+            </div>
+                    <br>
+
+                             <div class=" col-lg-offset-2 col-lg-8">
+                        <img class="img-responsive" width="100%" src="/static/images/disco.png" alt="">
+                         </div>
+
+
+
+
+    <br>
+       <br>
+    <div class="row">
+    <div class="container col-lg-offset-2 col-lg-8 align:center">
+  <h2>Componenet Required:-</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sr No.</th>
+        <th>Componenet</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td>NPN Transistor BC148</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Leds(red and green)</td>
+        <td>4 (each)</td>
+      </tr>
+        <tr>
+        <td>3.</td>
+        <td>Resistor(820 ohm)</td>
+        <td>2</td>
+      </tr>
+
+        <tr>
+        <td>4.</td>
+        <td>Resistor(68k ohm)</td>
+        <td>2</td>
+      </tr>
+         <tr>
+        <td>5.</td>
+        <td>Capacitor(22MF,16v)</td>
+        <td>2</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+    </div>
+
+
+  <div class="container">
+      <div class="jumbotron" style="background-color:#3b5998">
+<h2 style="color:white">Description:-</h2>
+
+<h4 style="color:white">
+
+In this project two transistors are connected in bistable multivibrator mode, means if one is ON other will be OFF.<br>
+Capacitor C1 and C2 connected at the collector of transistor determines the rate of blinking.<br>
+C1 and C2 can have same and different values it depends on you.<br>
+Since at a time only one transistor is on, the led connected to that very transistor will glow.<br>
+Bistable multivibrator is also called flip flop, trigger circuit or binary.<br>
+
+      </h4>
+
+        </div>
+
+                    </div>
+</div>
+{% block form_2 %}
+{% endblock %}
+
+{% endblock bodys %}

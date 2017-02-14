@@ -1,0 +1,135 @@
+{% extends 'base1.html' %}
+{% block bodys %}
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Clap switch (appliances control)
+</title>
+
+</head>
+<div style="background-color: #CCCCCC">
+
+    <div class="container">
+
+                <div class="row">
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h2>Clap switch (appliances control)
+|<small> 100% Tested</small></h2><br>
+
+                </div>
+                    <br>
+{% block body_12 %}
+{% endblock %}
+
+
+            </div>
+                    <br>
+
+                             <div class=" col-lg-offset-2 col-lg-8">
+                        <img class="img-responsive" width="100%" src="/static/images/clap_switch.png" alt="">
+                         </div>
+
+
+
+
+    <br>
+       <br>
+    <div class="row">
+    <div class="container col-lg-offset-2 col-lg-8 align:center">
+  <h2>Componenet Required:-</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sr No.</th>
+        <th>Componenet</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td>DC SOURCE(12V OR 9V) </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>CONDENSER MIC</td>
+        <td>1</td>
+      </tr>
+        <tr>
+        <td>3.</td>
+        <td>BC547 OR BC548</td>
+        <td>2  </td>
+      </tr>
+
+
+        <tr>
+        <td>4.</td>
+        <td>RESISTOR(1K)</td>
+        <td>2</td>
+      </tr>
+
+        <tr>
+        <td>5.</td>
+            <td>RESISTOR(330ohm) </td>
+        <td>2</td>
+      </tr>
+
+         <tr>
+        <td>6.</td>
+            <td>RESISTOR(47k)</td>
+        <td>1</td>
+      </tr>
+
+
+         <tr>
+        <td>7.</td>
+            <td>4017 IC</td>
+        <td>1</td>
+      </tr>
+
+        <tr>
+        <td>7.</td>
+            <td>LED</td>
+        <td>2</td>
+      </tr>
+
+        <tr>
+        <td>7.</td>
+            <td>DIODE(1N4007)</td>
+        <td>1</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+    </div>
+
+
+  <div class="container">
+      <div class="jumbotron" style="background-color:#3b5998">
+<h2 style="color:white">Description:-</h2>
+
+<h4 style="color:white">
+4017 is a decatecoumteric means it counts upto 10.<br>
+This ic have 10 output starting from(0-9).<br>
+We can reset the counting going on using reset pin .<br>
+As in this circuit the reset pin is connected to pin no 4.which is 3rd output.<br>
+Means the pin no. 2 and 3 will keep on repeating based on the triggering it get.<br>
+Clock(triggering pulses) is given at pin number 14.<br>
+In this circuit the triggering is done by us. When we clap the condenser mike give small signal to the transistor , transistor provide strength to that signal and send it to clock pin. When 4017 gets its clock it switches its output to the other pin .<br>
+
+      </h4>
+
+        </div>
+
+                    </div>
+</div>
+{% block form_12%}
+{% endblock %}
+{% endblock bodys %}

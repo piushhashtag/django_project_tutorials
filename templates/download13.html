@@ -1,0 +1,36 @@
+{% extends 'show13.html' %}
+
+{% block body_13%}
+<div class="col-lg-2" xmlns="http://www.w3.org/1999/html">
+    <a  href="{{ MEDIA_URL }}{{all.file.url}}" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-download-alt"></span> Download File</a>         </div>
+{% endblock %}
+
+{% block form_13%}
+
+    <form method="post" action="{%url 'base:home14' %}">
+    {% csrf_token %}
+
+<div style="margin:50px">
+<textarea style="height:150px;width:500px" class="form-control" name="content" rows="3" placeholder="Leave Your Comment"></textarea><br>
+
+     &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-hand-up"></span> Comment</button></div>
+   </form>
+
+    {% for x in comment %}
+        <br>
+
+        <div class="container">
+	<div class="row">
+	    <div class="container">
+            <blockquote class="quote-card">
+              <p>
+                {{ x.content }}
+              </p>
+
+        </div>
+	</div>
+</div>
+
+
+    {% endfor %}
+{% endblock %}

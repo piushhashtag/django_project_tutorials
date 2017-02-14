@@ -1,0 +1,107 @@
+{% extends 'base1.html' %}
+{% block bodys %}
+<head>
+{#<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">#}
+{#  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>#}
+{#  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>#}
+
+    <title>Led Blinking</title>
+
+</head>
+
+<div style="background-color: #CCCCCC">
+    <div class="container">
+
+                <div class="row">
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>LED Blinking Using 555IC|<small> 100% Tested</small></h1><br>
+
+                </div>
+                    <br>
+{% block body_5 %}
+{% endblock %}
+
+
+            </div>
+                    <br>
+
+                             <div class=" col-lg-offset-2 col-lg-8">
+                        <img class="img-responsive" width="100%" src="/static/images/led_original.png" alt="">
+                         </div>
+
+
+
+
+    <br>
+       <br>
+    <div class="row">
+    <div class="container col-lg-offset-2 col-lg-8 align:center">
+  <h2>Componenet Required:-</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sr No.</th>
+        <th>Componenet</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td>555 timer IC</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>9v battery</td>
+        <td>1</td>
+      </tr>
+        <tr>
+        <td>3.</td>
+        <td>Capacitor (1uF,10uF)</td>
+        <td>2</td>
+      </tr>
+
+        <tr>
+        <td>4.</td>
+        <td>Resistor (39k,68k,220R,220R)</td>
+        <td>4</td>
+      </tr>
+
+
+
+    </tbody>
+  </table>
+</div>
+    </div>
+
+
+  <div class="container">
+      <div class="jumbotron" style="background-color:#3b5998">
+<h2 style="color:white">Description:-</h2>
+
+<h4 style="color:white">
+
+Collect all the required components and place 555 timers IC on breadboard.<br>
+ Connect IC pin (4, 8) with power. Pin (1) of 555 IC connected to the ground. You can see the pin structure of 555 timer IC in the circuit diagram shown below.<br>
+Connect pin 2 to the positive end of the capacitor. Connect the negative lead of the capacitor with the ground of battery. <br>
+Also connect the pin 2 with pin 6 of the 555 timer IC.<br>
+Connect the pin 3 which is the output pin with the positive lead of the LED using 220R resistor, negative lead of LED needs to be connected with ground.<br>
+Pin 5 doesn’t connect with anything.<br>
+Connect pin 3 and pin 7, also connect the pin 6 and pin 7 with 39k resistor,<br>.
+Connect 1u capacitor with positive terminal is connected with pin 6 ,Other terminal of capacitor is connected with ground.<br>
+Resistor of 68k is connected with pin 3 and other terminal with the source.<br>
+
+      </h4>
+
+        </div>
+
+                    </div>
+</div>
+{% block form_5 %}
+{% endblock %}
+{% endblock bodys %}

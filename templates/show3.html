@@ -1,0 +1,113 @@
+{% extends 'base1.html' %}
+{% block bodys %}
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Water Level Indicator</title>
+
+</head>
+<div style="background-color: #CCCCCC">
+
+    <div class="container">
+
+                <div class="row">
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Water Level Indicator|<small> 100% Tested</small></h1><br>
+
+                </div>
+                    <br>
+{% block body_3 %}
+{% endblock %}
+
+
+            </div>
+                    <br>
+
+                             <div class=" col-lg-offset-2 col-lg-8">
+                        <img class="img-responsive" width="100%" src="/static/images/water_level_original.png" alt="">
+                         </div>
+
+
+
+
+    <br>
+       <br>
+    <div class="row">
+    <div class="container col-lg-offset-2 col-lg-8 align:center">
+  <h2>Componenet Required:-</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sr No.</th>
+        <th>Componenet</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td>NPN Transistor(BC547)</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Resistor (220 ohm)</td>
+        <td>5</td>
+      </tr>
+        <tr>
+        <td>3.</td>
+        <td>Resistor (330 ohm)</td>
+        <td>4</td>
+      </tr>
+
+        <tr>
+        <td>4.</td>
+        <td>LED</td>
+        <td>4</td>
+      </tr>
+         <tr>
+        <td>5.</td>
+        <td>buzzer</td>
+        <td>1</td>
+      </tr>
+             <tr>
+        <td>6.</td>
+        <td>Battery(5v)</td>
+        <td>1</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+    </div>
+
+
+  <div class="container">
+      <div class="jumbotron" style="background-color:#3b5998">
+<h2 style="color:white">Description:-</h2>
+
+<h4 style="color:white">
+
+Whole concept is based on transistor as a switch.
+BC547 is NPN transistor.<br>
+See the circuit diagram , there are 6 point at different ,the point/wire which is deep inside the tank is connected with positive part of battery/cell.<br>
+Rest 5 point/wire are connected to the base of transistor via resistor.<br>
+As water level increases small amount of current flows into the base which is enough to make the transistor ON.<br>
+When transistor gets ON, it will glow led indicating that the water have reached to that level.<br>
+
+
+      </h4>
+
+        </div>
+
+                    </div>
+</div>
+{% block form_3%}
+{% endblock %}
+{% endblock bodys %}

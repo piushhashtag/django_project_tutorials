@@ -1,0 +1,119 @@
+{% extends 'base1.html' %}
+{% block bodys %}
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Power control in AC appliances
+</title>
+
+</head>
+
+<div style="background-color: #CCCCCC">
+    <div class="container">
+
+                <div class="row">
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h2>Power control in AC appliances
+|<small> 100% Tested</small></h2><br>
+
+                </div>
+                    <br>
+{% block body_11 %}
+{% endblock %}
+
+
+            </div>
+                    <br>
+
+                             <div class=" col-lg-offset-2 col-lg-8">
+                        <img class="img-responsive" width="100%" src="/static/images/power_control.png" alt="">
+                         </div>
+
+
+
+
+    <br>
+       <br>
+    <div class="row">
+    <div class="container col-lg-offset-2 col-lg-8 align:center">
+  <h2>Componenet Required:-</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sr No.</th>
+        <th>Componenet</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td>RESISTOR(3.3K)</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>POTENTIOMETER(250K))</td>
+        <td>1</td>
+      </tr>
+        <tr>
+        <td>3.</td>
+        <td>CAPACITOR(0.1MF,270V)</td>
+        <td>1</td>
+      </tr>
+
+
+        <tr>
+        <td>4.</td>
+        <td>DIAC(DB3))</td>
+        <td>1</td>
+      </tr>
+
+        <tr>
+        <td>5.</td>
+            <td>TRIAC(BT136)</td>
+        <td>1</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+</div>
+    </div>
+
+
+  <div class="container">
+      <div class="jumbotron" style="background-color:#3b5998">
+<h2 style="color:white">Description:-</h2>
+
+<h4 style="color:white">
+
+(1.)DIAC(BIDIRECTIONAL THYRISTER DIODE) :   <br>
+Its turn ON voltage is about 30 volt, when conducting its act like a low resistor with 3v drop across it .  <br>
+When not conducting it act like open switch.  <br>
+It allow flow of current in both the direction, diac simply means diode that work on ac.  <br>
+
+(2.) TRIAC(BIDIRECTIONAL THYRISTER):  <br>
+It is extensively used for power control in ac circuit.  <br>
+Triac is the word derived by combining the capital letter from the word TRIode and AC.  <br>
+When in operation triac is equivalent to two SCRsconnected in anti parallel.  <br><br>
+In this circuit the triggering at the GATE terminal of triac is done by diac.  <br>
+The RC circuit is used here .  <br>
+Variable resistor control the charging time of capacitor  and therefore the firing angle of triac.  <br>
+This circuit is commercially used for controlling the power in lamp dimmer,heat  converter , speed control of fan etc.  <br>
+
+
+      </h4>
+
+        </div>
+
+                    </div>
+</div>
+{% block form_11 %}
+{% endblock %}
+{% endblock bodys %}

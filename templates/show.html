@@ -1,0 +1,137 @@
+{% extends 'base1.html' %}
+{% block bodys %}
+{#<head>#}
+{#<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">#}
+{#  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>#}
+{#  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>#}
+{##}
+{#    <title>voltage tripper</title>#}
+{##}
+{#</head>#}
+
+<div style="background-color: #CCCCCC">
+    <div class="container">
+
+                <div class="row">
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Over Voltage AC tripper  |<small style="color:white"> 100% Tested</small></h1><br>
+
+                </div>
+                    <br>
+{% block body %}
+{% endblock %}
+
+
+            </div>
+                    <br>
+
+                             <div class=" col-lg-offset-2 col-lg-8">
+                        <img class="img-responsive" width="100%" src="/static/images/tripper.png" alt="">
+                         </div>
+
+
+
+
+    <br>
+       <br>
+    <div class="row">
+    <div class="container col-lg-offset-2 col-lg-8 align:center">
+  <h2>Componenet Required:-</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sr No.</th>
+        <th>Componenet</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td>PNP Transistor(AC128)</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Diode(IN4007)</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Electrolytic Capacitor(1000MF,25V)</td>
+        <td>1</td>
+      </tr>
+        <tr>
+        <td>4.</td>
+        <td>Electrolytic Capacitor(147MF,63V)</td>
+        <td>1</td>
+      </tr>
+
+        <tr>
+        <td>5.</td>
+        <td>Resistor(2k2)</td>
+        <td>1</td>
+      </tr>
+
+
+        <tr>
+        <td>6.</td>
+        <td>Pre-set (4k7)</td>
+        <td>1</td>
+      </tr>
+
+
+        <tr>
+        <td>7.</td>
+        <td>Transformer(0-12v,750mA)</td>
+        <td>1</td>
+      </tr>
+
+        <tr>
+        <td>8.</td>
+        <td>Relay</td>
+        <td>1</td>
+      </tr>
+
+
+
+
+
+
+
+
+
+    </tbody>
+  </table>
+</div>
+    </div>
+
+
+  <div class="container text-left">
+
+ <div class="jumbotron" style="background-color:#3b5998">
+<h2 style="color:whitesmoke">Description:-
+      </h2>
+<br>
+<h4 style="color: whitesmoke;">
+-This circuit is quite useful where AC voltages fluctuate very much.<br>
+-It switches of the appliances when ac volt reaches more than 220 volt.<br>
+-In this circuit first ac is passed through transformer which lowers down its voltage then diode changes that ac in pulsating dc which is then -filtered for pure dc.<br>
+-When AC voltage is 220 Transistor is in cutoff region (OFF STATE).<br>
+-When voltage increases, negative voltage passes through zener diode and reaches to transistor base  makes transistor in saturation region(ON STATE). <br>
+-Which makes relay in ON state and thus AC get tripped .<br>
+
+
+      </h4>
+                    </div>
+  </div>
+    </div>
+
+{% block form %}
+    {% endblock %}
+
+{% endblock bodys %}

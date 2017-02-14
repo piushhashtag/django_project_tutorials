@@ -1,0 +1,126 @@
+{% extends 'base1.html' %}
+{% block bodys %}
+<head>
+{#<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">#}
+{#  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>#}
+{#  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>#}
+
+    <title>Voltage Rectifier</title>
+
+</head>
+
+<div style="background-color: #CCCCCC">
+    <div class="container">
+
+                <div class="row">
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Voltage Rectifier(Using 7805 IC)|<small> 100% Tested</small></h1><br>
+
+                </div>
+                    <br>
+{% block body_4 %}
+{% endblock %}
+
+
+            </div>
+                    <br>
+
+                             <div class=" col-lg-offset-2 col-lg-8">
+                        <img class="img-responsive" width="100%" src="/static/images/voltage_rectifier_original.png" alt="">
+                         </div>
+
+
+
+
+    <br>
+       <br>
+    <div class="row">
+    <div class="container col-lg-offset-2 col-lg-8 align:center">
+  <h2>Componenet Required:-</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sr No.</th>
+        <th>Componenet</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td>Ac source(220v,60Hz)</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Transformer(12v)</td>
+        <td>1</td>
+      </tr>
+        <tr>
+        <td>3.</td>
+        <td>Diode(1N4007)</td>
+        <td>4</td>
+      </tr>
+
+        <tr>
+        <td>4.</td>
+        <td>Electrolytic Capacitor(1000MF,35v)</td>
+        <td>1</td>
+      </tr>
+         <tr>
+        <td>5.</td>
+        <td>Electrolytic capacitor(10MF,35V)</td>
+        <td>2</td>
+      </tr>
+             <tr>
+        <td>6.</td>
+        <td>Voltage regulator(7805 IC)</td>
+        <td>1</td>
+      </tr>
+<tr>
+        <td>7.</td>
+        <td>Resistor(330 Ohm)</td>
+        <td>1</td>
+      </tr>
+<tr>
+        <td>8.</td>
+        <td>LED</td>
+        <td>1</td>
+      </tr>
+
+
+
+    </tbody>
+  </table>
+</div>
+    </div>
+
+
+  <div class="container">
+      <div class="jumbotron" style="background-color:#3b5998">
+<h2 style="color:white">Description:-</h2>
+
+<h4 style="color:white">
+
+AC voltage given to the transformer is converted into low value AC voltage but the frequency will not change.<BR>
+Low voltage AC is passed through diode gets converted into pulsating dc.<BR>
+This type of connection of diode is called BRIDGE connection.<BR>
+Bridge connection is used for full wave rectification, this type of connection  don’t need shunted transformer.<BR>
+The maximum efficiency of a full wave rectifier is 81.2%.<BR>
+Capacitor converts pulsating DC into DC but that also not pure DC.<BR>
+Voltage regulator is used to make them pure. It has 3 pin first one is for input, second one is ground (common),third one is output.<BR>
+Lastly led is connected with 330 ohm resistance to check 5 volt output.<BR>
+
+      </h4>
+
+        </div>
+
+                    </div>
+</div>
+{% block form_4 %}
+{% endblock %}
+{% endblock bodys %}

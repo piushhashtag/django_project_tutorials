@@ -1,0 +1,127 @@
+{% extends 'base1.html' %}
+{% block bodys %}
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Continuity tester by using 555 timer IC
+</title>
+
+</head>
+<div style="background-color: #CCCCCC">
+
+    <div class="container">
+
+                <div class="row">
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h2>Continuity tester by using 555 timer IC
+|<small> 100% Tested</small></h2><br>
+
+                </div>
+                    <br>
+{% block body_14 %}
+{% endblock %}
+
+
+            </div>
+                    <br>
+
+                             <div class=" col-lg-offset-2 col-lg-8">
+                        <img class="img-responsive" width="100%" src="/static/images/contunity.png" alt="">
+                         </div>
+
+
+
+
+    <br>
+       <br>
+    <div class="row">
+    <div class="container col-lg-offset-2 col-lg-8 align:center">
+  <h2>Componenet Required:-</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sr No.</th>
+        <th>Componenet</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td>NE555 timer IC </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Capacitors </td>
+        <td>100uf(1), 22uf(1), 10uf(1)</td>
+      </tr>
+        <tr>
+        <td>3.</td>
+        <td>Resistor </td>
+        <td>2.2k, 1.5k, 100ohm</td>
+      </tr>
+
+
+        <tr>
+        <td>4.</td>
+        <td>Speaker </td>
+        <td>1</td>
+      </tr>
+
+        <tr>
+        <td>5.</td>
+            <td>Test probes </td>
+        <td>2</td>
+      </tr>
+
+         <tr>
+        <td>6.</td>
+            <td>Potentiometer</td>
+        <td>10k(1)</td>
+      </tr>
+
+
+         <tr>
+        <td>7.</td>
+            <td>Capacitor(100uf)</td>
+        <td>1</td>
+      </tr>
+
+
+
+    </tbody>
+  </table>
+</div>
+    </div>
+
+
+  <div class="container">
+      <div class="jumbotron" style="background-color:#3b5998">
+<h2 style="color:white">Description:-</h2>
+
+<h4 style="color:white">
+Here 555 work in a stable mode of operation.<br>
+555 are designed to generate 2 KHz output frequency.<br>
+Output of 555 is connected to an 8 ohm speaker.<br>
+As you know 555 is enabled only when the reset pin (4th pin) is connected to Vcc. Here the 4th pin connected to ground through a 100ohm resistor, so normally it is OFF. Thus speaker doesn’t produce any sound.<br>
+One probe is taken from Vcc and other probe from the 4th pin, through a potentiometer.<br>
+When we are connecting the probes between the testing points, then the 4th pin will get a positive Vcc. Thus enabling 555 multimeter and hence speaker will start to produce sound.<br>
+Potentiometer helps to set the resistance to determine the point when the buzzer should turn ON.<br>
+
+
+
+      </h4>
+
+        </div>
+
+                    </div>
+</div>
+{% block form_14 %}
+{% endblock %}
+{% endblock bodys %}

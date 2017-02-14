@@ -1,0 +1,142 @@
+{% extends 'base1.html' %}
+{% block bodys %}
+<head>
+{#<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">#}
+{#  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>#}
+{#  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>#}
+
+    <title>Temperature Controle LED </title>
+
+</head>
+<div style="background-color: #CCCCCC">
+
+    <div class="container">
+
+                <div class="row">
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Temperature Control LED|<small> 100% Tested</small></h1><br>
+
+                </div>
+                    <br>
+{% block body_6 %}
+{% endblock %}
+
+
+            </div>
+                    <br>
+
+                             <div class=" col-lg-offset-2 col-lg-8">
+                        <img class="img-responsive" width="100%" src="/static/images/temparature.png" alt="">
+                         </div>
+
+
+
+
+    <br>
+       <br>
+    <div class="row">
+    <div class="container col-lg-offset-2 col-lg-8 align:center">
+  <h2>Componenet Required:-</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sr No.</th>
+        <th>Componenet</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td>9V Battery</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>7805(IC Regulator)</td>
+        <td>1</td>
+      </tr>
+        <tr>
+        <td>3.</td>
+        <td>LM35</td>
+        <td>1</td>
+      </tr>
+
+        <tr>
+        <td>4.</td>
+        <td>LM358</td>
+        <td>1</td>
+      </tr>
+
+        <tr>
+        <td>5.</td>
+        <td>10K 0hm(resistor)</td>
+        <td>3</td>
+      </tr>
+
+        <tr>
+        <td>6.</td>
+        <td>1K Ohm(resistor)</td>
+        <td>3</td>
+      </tr>
+
+
+     <tr>
+        <td>7.</td>
+        <td>variable resistor(10K)</td>
+        <td>1</td>
+      </tr>
+        <tr>
+        <td>8.</td>
+        <td>LED</td>
+        <td>2</td>
+      </tr>
+
+        <tr>
+        <td>9.</td>
+        <td>BC547</td>
+        <td>2</td>
+      </tr>
+
+
+
+
+
+
+
+    </tbody>
+  </table>
+</div>
+    </div>
+
+
+  <div class="container">
+      <div class="jumbotron" style="background-color:#3b5998">
+<h2 style="color:white">Description:-</h2>
+
+<h4 style="color:white">
+
+First we see in below circuit diagram. There some IC is used like LM35 and LM358.<br>
+LM35 IC is also called temperature sensor. This sensor provides variable voltage at the output based on the temperature.<br>
+LM35 provides output in degree Celsius and can sense up to 150 degree Celsius temperature.<br>
+We have also used LM358 IC; it is an op-amp.<br>
+LM35 provides reference voltage for op-amp at pin 2 (which is also called reference voltage pin).<br>
+LM358 it is also voltage comparators, it compare two voltage and give output.<br>
+9v general purpose battery is used to power up the whole circuit and IC7805 is used to provide the regulated 5v supply to the circuit.<br>
+When temperature is below 50 degree Celsius then led 2 remain ON and led 1 is OFF.<br>
+When temperature is below 50 degree then output of LM358 remains LOW and q1 remains in OFF state and transistor q2 is ON state.<br>
+When temperature is beyond 50 degree Celsius, output voltage of LM35 at pin 2 also goes higher than 0.5volt. Output of LM35 is connected to pin 3 of op-amp LM358. Output of opamp LM358 (pin1) becomes high. Output is connected to base of transistor q1 also become ON and led 1 becomes ON.<br>
+
+      </h4>
+
+        </div>
+
+                    </div>
+</div>
+{% block form_6 %}
+{% endblock %}
+{% endblock bodys %}

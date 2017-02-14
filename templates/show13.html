@@ -1,0 +1,125 @@
+{% extends 'base1.html' %}
+{% block bodys %}
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Buzzer Alarm Circuit
+</title>
+
+</head>
+<div style="background-color: #CCCCCC">
+
+    <div class="container">
+
+                <div class="row">
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h2>Buzzer Alarm Circuit
+|<small> 100% Tested</small></h2><br>
+
+                </div>
+                    <br>
+{% block body_13 %}
+{% endblock %}
+
+
+            </div>
+                    <br>
+
+                             <div class=" col-lg-offset-2 col-lg-8">
+                        <img class="img-responsive" width="100%" src="/static/images/buzzer_original.png" alt="">
+                         </div>
+
+
+
+
+    <br>
+       <br>
+    <div class="row">
+    <div class="container col-lg-offset-2 col-lg-8 align:center">
+  <h2>Componenet Required:-</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sr No.</th>
+        <th>Componenet</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td>555 timer IC </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Photodiode</td>
+        <td>1</td>
+      </tr>
+        <tr>
+        <td>3.</td>
+        <td>IR led</td>
+        <td>1</td>
+      </tr>
+
+
+        <tr>
+        <td>4.</td>
+        <td>BC 548</td>
+        <td>1</td>
+      </tr>
+
+        <tr>
+        <td>5.</td>
+            <td>12v Buzzer</td>
+        <td>1</td>
+      </tr>
+
+         <tr>
+        <td>6.</td>
+            <td>RESISTOR</td>
+        <td>100k(1),1K(2)</td>
+      </tr>
+
+
+         <tr>
+        <td>7.</td>
+            <td>Capacitor(100uf)</td>
+        <td>1</td>
+      </tr>
+
+
+
+    </tbody>
+  </table>
+</div>
+    </div>
+
+
+  <div class="container">
+      <div class="jumbotron" style="background-color:#3b5998">
+<h2 style="color:white">Description:-</h2>
+
+<h4 style="color:white">
+Main components used here is a photodiode and IR led. We are creating a continuous loop arrangement around the house with it.<br>
+555 timers IC used here works in monostable mode of operation.<br>
+IR led continuously strikes infrared beams on the photodiode. As a result the trigger pin (2nd pin) of 555 will get the positive voltage from Vcc.<br>
+ Hence its output will remain LOW as 555 monostable multivibrators gets a HIGH output only on negative trigger. When an intruder cuts the IR beam, photodiodes acts as an open circuit. Thus 2nd pin gets negative through resistor R2 turning the monostable output to HIGH.<br>
+Output pin in connected to the base of the NPN switching transistor through a resistor R3. Thus the transistor becomes ON giving power to the buzzer.<br>
+To increase the range of IR you can use a converging lens. How would you see if the IR beam has converged to the photodiode efficiently? For that you can use a camera or a visible LED to set the focus and then replace that with IR LED.<br>
+
+
+      </h4>
+
+        </div>
+
+                    </div>
+</div>
+{% block form_13 %}
+{% endblock %}
+{% endblock bodys %}
